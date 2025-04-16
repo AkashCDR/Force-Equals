@@ -8,7 +8,7 @@
 ![Image 4](images/image4.png)
 ![Image 5](images/image5.png)
 
-```bash
+
 git clone https://github.com/yourusername/target-account-api.git
 cd target-account-api
 npm install
