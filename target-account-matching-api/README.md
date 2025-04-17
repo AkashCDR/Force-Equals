@@ -22,10 +22,6 @@ npm start
 
 ### Signup
 
-http
-
-Copy
-
 POST /signup
 Content-Type: application/json
 {
@@ -34,10 +30,6 @@ Content-Type: application/json
 }
 
 ### Login
-
-http
-
-Copy
 
 POST /login
 Content-Type: application/json
@@ -50,10 +42,6 @@ Content-Type: application/json
 
 ### Create Company
 
-http
-
-Copy
-
 POST /companies
 Authorization: Bearer <token>
 Content-Type: application/json
@@ -65,18 +53,10 @@ Content-Type: application/json
 
 ### Get All Companies
 
-http
-
-Copy
-
 GET /accounts
 Authorization: Bearer <token>
 
 ### Update Status
-
-http
-
-Copy
 
 POST /accounts/:id/status
 Authorization: Bearer <token>
@@ -85,49 +65,3 @@ Content-Type: application/json
   "status": "Target"
 }
 
-## 🛠️ Project Structure
-
-Copy
-
-target-account-api/
-├── config/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── .env
-├── .gitignore
-├── package.json
-└── server.js
-
-## 🔧 Example Usage
-
-javascript
-
-Copy
-
-// Frontend API Call Example
-const createCompany \= async (companyData) \=> {
-  const response \= await fetch('http://localhost:3000/companies', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': \`Bearer ${localStorage.getItem('token')}\`
-    },
-    body: JSON.stringify(companyData)
-  });
-  return await response.json();
-};
-
-## ⚠️ Error Handling
-
-json
-
-Copy
-
-{
-  "error": "Invalid credentials",
-  "statusCode": 401
-}
-
-## 📜 License
