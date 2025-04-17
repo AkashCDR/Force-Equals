@@ -1,7 +1,6 @@
 # LinkedIn Profile Enhancer Chrome Extension
 
 ![Extension Preview](images/preview.png)  
-*(Replace with your actual screenshot path)*
 
 ## 📌 Overview
 A Chrome extension that adds a widget to LinkedIn profiles showing:
@@ -38,18 +37,5 @@ chrome://extensions/
 2. Content script → Injects widget into LinkedIn
 3. Background script → Manages storage
 
-## 📂 File Structure
-
-linkedin-enhancer/
-├── icons/
-├── popup/
-│ ├── popup.html
-│ ├── popup.css
-│ └── popup.js
-├── styles/
-│ └── widget.css
-├── content.js
-├── background.js
-└── manifest.json
 
 
